@@ -1,4 +1,10 @@
-.( Compiling    Comms.fth Version 8.00 ) cr
+.( Compiling    Comms.fth Version 8.10 ) cr
+(*
+	2015-04-14	Local versioning, moved to GitHub
+	2015-04-14	Version 08.10.0000	GitHub
+	
+*)
+
 " COMMS.FTH Entry" stackCheck
 decimal
 1	constant HOSTPORT
