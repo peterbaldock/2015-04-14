@@ -1,0 +1,19 @@
+PlateLoader Calibration
+=======================
+
+Type <test> first. Then the following words become available
+
+fi    { does FindIndexPositions
+rall  { rezeros all axes
+.LS   { display all limit switch values continuously, until a key is hit
+
+CalX  { calibrate the X axis
+CalY  { calibrate the Y axis
+CalZ  { calibrate the X axis
+CalV  { calibrate the Y axis (only on XYZV, not Nano)
+
+CalX/Y/Z/V produce calibration files called XCAL.DAT, YCAL.DAT etc.
+Front Panel has a menu item {PlateLoader | Transfer Calibration Files} to
+download them to "C:\Program Files\Douglas Instruments\MCC" on the PC.
+
+

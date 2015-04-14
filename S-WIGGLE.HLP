@@ -1,0 +1,5 @@
+.( Syringe wiggle ) cr
+: 8> float: d 9 1 do i d moveby loop 47 actuate ;
+: 8<> 50.0 8> -50.0 8> ;
+: 8<<>> 0 do 8<> loop ;
+

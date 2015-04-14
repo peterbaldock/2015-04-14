@@ -1,0 +1,12 @@
+DB7-CLK.DBG
+===========
+
+        Forth-controlled clocking of data to DB7 using diagnostic mode
+
+bbbb >>    } set bit pattern on SSI bus. bbbb = { CLK=1, ADR=2, STB=4, SDO=8 }
+
+bbb0 ck>   } set ADR, STB and SDO=bbb, and pulse clock 0-1-0
+addr a>db7 } clock out address (returns all lines to 0 after strobe)
+data d>db7 } clock out data - 16 bits
+
+data addr >db7 } complete write to DB7

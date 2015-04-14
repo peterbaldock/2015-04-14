@@ -1,0 +1,13 @@
+Forth Dump Utilities
+====================
+.s                   } stack dump
+
+<addr> <nlines> dump } hex dump starting at <addr> in the FORTH data segment
+<addr> <nlines> es:dump } hex dump as above, but from the es segment
+
+<addr> <nlines> fdump } floating point dump starting at <addr>
+..                   } repeat dump : dump next nlines
+
+(cs> or seg) >es     } >es loads the es register to point to any memory segment
+
+wdump <word-name>    } hex dump of the definition of the word <word-name>

@@ -1,0 +1,12 @@
+: >DB7 word: data word: a
+	a $318 out data $318 outw
+	$318 inw hex.
+;	
+: DB7! word: data word: function word: board
+	function 4 shl board + CardAddress @ out
+	data CardAddress @ outw
+;
+
+: DB7@ CardAddress @ inw ;
+: DB7? ( word: BoardNo ) $a5a5  $10 >DB7 ; ( 1 ms DB7@ dup hex. ; )
+

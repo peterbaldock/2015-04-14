@@ -1,0 +1,13 @@
+DC7.HLP
+
+Test Point Probe
+================
+
+x86_    : 0. PCI_Clock  1. Hold       2. to_DB7     3. Active 
+x86_    : 4. Read       5. Write      6. ---        7. ---
+
+SSI     : 8. Probe      9. CLK        A. SDO        B. STB
+SSI     : C. Ready      D. ADR        E. ACK        F. SDI  
+
+USB     : G. RxValid    H. TxReady    I. Read       J. Write
+

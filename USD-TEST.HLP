@@ -1,0 +1,20 @@
+USD Instructions (BallScrew USD2.0)
+===================================
+
+Backlash measurements are done by comparing 10 readings of the unloaded USD
+with 10 readings of the USD loaded with a 100ul syringe. The unloaded readings
+are taken with a rubber band providing light tension, so that backlash is
+prevented. This therefore measures the hysteresis of the optoswitch.
+
+The optoswitch must be connected to channel 10 (Y axis LS input)
+
+USD Test Words        - type <test> first
+==============
+sno b   } Does 10 hysteresis measurements, followed by 10 backlash measurements
+        } and reports the means and the difference, which is the backlash.
+
+sno s+  } moves syringe sno +0.05mm   eg   2 s+
+sno s-  } moves syringe sno -0.05 mm
+sno s++ } moves syringe sno +1.0 mm
+sno s-- } moves syringe sno -1.0 mm
+

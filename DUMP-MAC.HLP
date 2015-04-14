@@ -1,0 +1,21 @@
+MAC-DUMP.HLP
+
+Motor Parameters
+================
+mdump   } dump motor pitch, position and speed information
+ldump   } dump motor length information
+usddump } dump detailed syringe drive values
+xyzdump } dump detailed plateloader values
+ccdump  } dump the polynomial coefficients for the table calibration
+
+Machine State
+=============
+sdump      } dump internal motor stepping state (fixed point hex)
+rezerodump } (= rsdump) - show rezero statistics
+.ls        } continuously display the limit switch values
+DB6dump    } display board port values and configuration status
+
+Forth Dump Utilities - see HELP <DUMP-FTH>
+==========================================
+Covers .s, dump, es:dump, wdump, fdump and TypeFile
+

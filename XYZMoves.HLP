@@ -1,0 +1,20 @@
+Parameters
+==========
+    P, X, Y, Z, V are floating-point positions in mm (point is mandatory)
+    Axis is an uppercase character [XYZV] or integer : X=0, Y=1, Z=2, V=3.
+    Axes is an integer bit pattern, obtained by oring x=1, y=2, z=4, v=8
+    Arm is an integer, 0 or 1 : z=0, v=1
+
+Arguments Command                          Comments
+========= =========    ======================================================
+X Y       XYGoto       Move only the table : 41.0 21.5 XYGoto
+Z V       ZVGoto       Move Z and V simultaneously
+X Y Z Arm XYZVGoto     Move to an (X, Y, Z) position using Arm = 0 or 1
+P Axis    AxisGoto     Move axis to position P. ( eg    5.0  Z  AxisGoto )
+Axes      Home         Move to the HOME position on a selection of axes
+Axis      GotoOpto     For example, Y GotoOpto
+Axis      RezeroLS     Rezero using Limit Switch ( X RezeroLS  cf. RezeroX )
+
+          Axes.Fast    Set all axes of plateloader to full speed
+          ClrRS        Clear Rezero Statistics
+          RezeroDump   Same as rsdump : display rezero statistics.

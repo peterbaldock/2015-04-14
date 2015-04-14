@@ -1,0 +1,19 @@
+PlateLoader Test Words   -  type <test> first
+======================
+
+fi        { does FindIndexPositions
+rall      { rezeros all axes
+
+.LS       { display all limit switch values continuously, until a key is hit
+TestAxes  { finds maximum reliable speed for each axes
+
+One motor at a time - for efficiency
+===================
+
+Axis numbers are X, Y, Z, V = (0, 1, 2, 3)
+<b> refers to an axis bitmap; 2^X=1, 2^Y=2, 2^Z=44, 2^V=8; so {X|Y|Z} = 7
+
+<b> _fip  { FindIndexPositions for one or more motors in <b>
+<A> FindVMax { Find maximum speed of axis <A>             eg Z FindVMax 
+
+

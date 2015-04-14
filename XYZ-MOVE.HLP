@@ -1,0 +1,18 @@
+PlateLoader Test Move Words   
+============================
+                                      -  type <test> first
+fi        { does FindIndexPositions
+rall      { rezeros all axes
+.LS       { display all limit switch values continuously, until a key is hit
+x y z v   { Sets X, Y Z or V axis as target. Subsequent commands use this axis
+(mm) >    { Sets target position for current axis
+(mm) +>   { Sets relative target position for current axis
+(mm) >>   { Sets target and moves
+a         { Cause any pending moves to happen.
+
+jog       { go into JOG mode. Use <+>/<->, and <Enter> to quit
+
+(v) speed { Sets the speed to (v)
+
+Example:   x 60 > y 75 >>     will move to (X, Y) = (60.0, 75.0)
+           52 speed z 50 > v 40 > a   will raise Z and V axes at full speed.
